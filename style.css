@@ -81,7 +81,6 @@
    PAGE
    ========================= */
 body {
-  position : relative;
   background-color: rgb(26, 26, 26);
   padding-top: 70px; /* espace pour le nav fixe */
   font-family: Arial, sans-serif;
@@ -105,8 +104,6 @@ h1 {
 }
 
 footer {
-  position : absolute;
-  bottom: 0;
   margin-top: 40px;
   padding: 1rem;
   text-align: center;
