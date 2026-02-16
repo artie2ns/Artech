@@ -31,6 +31,12 @@
   );
 }
 
+.main-nav a:hover,
+#nav2:hover,
+#nav3 a:hover {
+  color: rgb(201, 0, 191);
+}
+
 .main-nav a {
   color: beige;
   text-decoration: none;
@@ -256,3 +262,4 @@ footer {
     rgba(2, 0, 36, 1) 100%
   );
 }
+
