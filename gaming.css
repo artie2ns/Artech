@@ -21,7 +21,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,67,1) 100%);
 }
@@ -224,3 +224,4 @@ footer {
 
   background: linear-gradient(90deg, rgba(121,9,67,1) 0%, rgba(2,0,36,1) 100%);
 }
+
