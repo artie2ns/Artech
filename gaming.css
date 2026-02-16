@@ -1,0 +1,226 @@
+/* =========================
+   RESET
+   ========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   NAV PRINCIPAL (TOP BAR)
+   ========================= */
+.main-nav {
+  width: 100%;
+  height: 60px;
+  padding: 0 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,67,1) 100%);
+}
+
+.main-nav a {
+  color: beige;
+  text-decoration: none;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.main-nav a:hover,
+#nav2:hover,
+#nav3 a:hover {
+  color: rgb(201, 0, 191);
+}
+
+#nav2 {
+  background: transparent;
+  border: none;
+  color: beige;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* =========================
+   NAV LATÉRALE
+   ========================= */
+#nav3 {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+
+  background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(121,9,67,1) 100%);
+  transition: left 0.3s ease;
+}
+
+#nav3.show {
+  left: 0;
+}
+
+#nav3 a {
+  color: beige;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* =========================
+   BASE PAGE
+   ========================= */
+body {
+  background-color: rgb(26, 26, 26);
+  padding-top: 70px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: beige;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* =========================
+   SECTION BOXES (70 / 30)
+   ========================= */
+.boxes {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+
+.box1,
+.box2,
+.boxes2 {
+  padding: 20px;
+  background-color: rgb(34, 0, 28);
+  color: beige;
+  border: 1px solid rgb(37, 37, 37);
+}
+
+.box1 {
+  flex: 3;
+  text-align: center;
+}
+
+.box2 {
+  flex: 7;
+}
+
+.boxes2 {
+  margin: 20px;
+  text-align: center;
+}
+
+/* Lien CTA */
+.boxes a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: beige;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.boxes a:hover {
+  color: rgb(201, 0, 191);
+}
+
+/* =========================
+   BOX1 : box11 + box12 côte à côte
+   ========================= */
+.box1-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.box11,
+.box12 {
+  flex: 1;
+}
+
+/* =========================
+   BOXES2 : image + texte
+   ========================= */
+.boxes2-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 0 20px;
+}
+
+.box21 {
+  flex: 0 0 auto;
+  margin-bottom: 10px;
+}
+
+.phanteks {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.box22 {
+  flex: 1;
+  color: beige;
+  text-align: left;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+
+  .boxes {
+    flex-direction: column;
+  }
+
+  .box1-content {
+    flex-direction: column;
+  }
+
+  .boxes2-content {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 10px;
+    gap: 15px;
+  }
+
+  .box21 {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .box22 {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  margin-top: 40px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+
+  background: linear-gradient(90deg, rgba(121,9,67,1) 0%, rgba(2,0,36,1) 100%);
+}
